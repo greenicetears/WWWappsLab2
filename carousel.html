@@ -8,6 +8,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
+   .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
   body {
       position: relative; 
   }
@@ -23,6 +27,9 @@
     <li class="nav-item">
       <a class="nav-link" href="#section1">Section 1</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#demo">Carousel</a>
+      </li>
   </ul>
 </nav>
 </div>
@@ -40,6 +47,49 @@
   <h1>Section 1</h1>
 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
 </div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>First slide</h5>
+            <p>A photo of concert in Los Angeles.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide</h5>
+            <p>New Years Eve in Chicago.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ny.jpg" alt="New York" width="1100" height="500">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide</h5>
+            <p>Nulla vitae elit libero.</p>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 
 </body>
 </html>
